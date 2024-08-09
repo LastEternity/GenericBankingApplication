@@ -6,7 +6,7 @@ export default function RootLayout({
   return (
     <main>
         SIDEBAR
-        {chilren}
+        {children}
     </main>
   );
 }
