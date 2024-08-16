@@ -1,9 +1,10 @@
 import HeaderBox from '@/components/ui/HeaderBox'
+import RightSidebar from '@/components/ui/RightSidebar'
 import TotalBalanceBox from '@/components/ui/TotalBalanceBox'
 import React from 'react'
 
 const Home = () => {
-    const loggedIn = {firstName: 'Adrian'}
+    const loggedIn = {firstName: 'Adrian', lastName: 'Ros', email:"adrian.s.rosing@gmail.com"}
 
   return (
     <section className="home">
@@ -22,7 +23,13 @@ const Home = () => {
                     totalCurrentBalance={1000.00}
                 />
             </header>
+
+            RECENT TRANSACTIONS
         </div>
+
+        <RightSidebar user={loggedIn} transactions={[]} banks={[{ currentBalance: 100.00},{ currentBalance: 200.00}]}/>
+
+
     </section>
   )
 }
